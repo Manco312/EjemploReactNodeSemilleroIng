@@ -179,3 +179,7 @@ export default App;
 ```
 npm start
 ```
+
+## 4. Opciones de Despliegue
+
+[Vercer](https://vercel.com) ó [Render](https://render.com)
