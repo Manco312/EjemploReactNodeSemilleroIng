@@ -34,7 +34,9 @@ npm install
 **Instalar Middleware (CORS y body-parser):**
 
 *¿Qué es un Middleware?* Componente que permite unir o comunicar múltiples sistemas o capas. Es un **integrador**.
+
 *¿Qué es CORS?* Es un middleware que permite que un servidor acepte peticiones desde otros dominios o puertos distintos al suyo.
+
 *¿Qué es body-parser?* Es un middleware que permite a tu servidor leer el cuerpo de las solicitudes (por ejemplo, datos enviados en un formulario o JSON).
 
 En la consola:
