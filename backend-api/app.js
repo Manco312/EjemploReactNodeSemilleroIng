@@ -25,3 +25,8 @@ const bodyParser = require('body-parser');
 
 app.use(cors());
 app.use(bodyParser.json());
+
+
+// Configuración de la ruta
+const tasksRouter = require('./routes/tasks');
+app.use('/api/tasks', tasksRouter);
