@@ -9,11 +9,17 @@ function App() {
     fetchTasks();
   }, []);
 
+  // Función para obtener las tareas desde el backend
+  // Se espera que el backend esté corriendo en http://localhost:3000
+  // y que la ruta para obtener las tareas sea /api/tasks
   const fetchTasks = async () => {
     const res = await axios.get('http://localhost:3000/api/tasks');
     setTasks(res.data);
   };
 
+  // Función para agregar una nueva tarea
+  // Se espera que el backend esté corriendo en http://localhost:3000
+  // y que la ruta para agregar tareas sea /api/tasks
   const addTask = async () => {
     if (newTitle.trim() === '') return;
     await axios.post('http://localhost:3000/api/tasks', { title: newTitle });
@@ -21,11 +27,16 @@ function App() {
     fetchTasks();
   };
 
+  // Función para eliminar una tarea
+  // Se espera que el backend esté corriendo en http://localhost:3000
+  // y que la ruta para eliminar tareas sea /api/tasks/:id
+  // donde :id es el ID de la tarea a eliminar
   const deleteTask = async (id) => {
     await axios.delete(`http://localhost:3000/api/tasks/${id}`);
     fetchTasks();
   };
 
+  // Retorna el componente principal
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Lista de Tareas</h1>

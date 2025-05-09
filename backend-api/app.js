@@ -22,7 +22,6 @@ module.exports = app;
 // Configuración de CORS y body-parser (middlewares)
 const cors = require('cors');
 const bodyParser = require('body-parser');
-
 app.use(cors());
 app.use(bodyParser.json());
 
