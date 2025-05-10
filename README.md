@@ -1,5 +1,11 @@
 # Ejemplo - Backend con Node.js y Frontend con React
 
+Para este ejemplo construiremos un sistema gestor de tareas que:
+
+- Muestre las tareas agregadas.
+- Permita agregar nuevas tareas.
+- Permita eliminar tareas existentes.
+
 ## 1. Configurar entorno
 
 **Prerrequisitos:**
